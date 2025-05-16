@@ -10,7 +10,7 @@ This project implements a Generative Adversarial Network (GAN) to automatically 
 
 - The model is trained on a dataset of **landscape images** consisting of paired **grayscale** and **color** images.
 - Images are resized to **128×128 pixels** for efficient training.
-- Dataset source: [Insert Dataset Source or link if public]
+- Dataset source: https://www.kaggle.com/datasets/theblackmamba31/landscape-image-colorization
 
 ---
 
