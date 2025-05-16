@@ -32,3 +32,37 @@ This project implements a Generative Adversarial Network (GAN) to automatically 
 - Number of Epochs: 20 (modifiable)  
 - Image preprocessing includes normalization to [0,1].
 
+
+## How to Run This Project
+
+### Prerequisites
+- You need a Kaggle account to download the dataset using the Kaggle API.
+- Download your Kaggle API key (`kaggle.json`) from your Kaggle account:
+  1. Go to [Kaggle Account](https://www.kaggle.com/account)
+  2. Scroll down to "API" section and click **Create New API Token**
+  3. This will download `kaggle.json` file to your computer.
+
+### Steps to Run on Google Colab (Recommended)
+
+1. **Upload `kaggle.json` file** to your Colab environment.
+2. **Set up Kaggle API and download the dataset**
+3. **Run your training and evaluation scripts** as per the notebook or script provided.
+
+### GPU Support on Colab
+
+- Google Colab provides **free access to GPU runtime** (Tesla T4/P100/K80) which significantly speeds up training deep learning models.
+- To enable GPU:
+  - Go to **Runtime > Change runtime type** in Colab
+  - Select **GPU** as hardware accelerator
+- Note:  
+  - GPU sessions are limited to approximately 12 hours and may disconnect after periods of inactivity.
+  - You can restart the runtime and run your notebook again; however, you may need to re-download datasets and reload/save your model.
+
+### Runtime Notes
+
+- Colab’s runtime environment is ephemeral — files and models stored in `/content` will be deleted after disconnect or idle timeout.
+- To **preserve your trained models and data**, consider mounting your **Google Drive** and saving/loading from there.
+- Each time you restart, your environment (dataset, models) needs to be set up again (downloaded or loaded from Drive).
+
+---
+
